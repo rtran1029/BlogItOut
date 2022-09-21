@@ -1,0 +1,18 @@
+<form class="edit-post-form edit-post-container mx-auto border-dark">
+  <h2 class="bg-dark text-white edit-title">Edit Post</h2>
+  <div class="p-2">
+    <label class="text-dark">Title</label>
+    <input class="text-dark form-control" type="text" name="post-title" id="post-title" value="{{post.title}}" />
+  </div>
+  <div class="p-2">
+    <label class="text-dark">Content</label>
+    <input class="text-dark form-control post-content-input" type="text" name="post-content" id="post-content" value="{{post.content}}" />
+  </div>
+  <div class="p-2">
+    <button type="submit" class="edit-button btn btn-secondary form-control">Update Post</button>
+    <button type="button" class="edit-button delete-post-btn btn btn-secondary form-control">Delete</button>
+  </div>
+</form>
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
