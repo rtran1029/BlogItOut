@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #9932CD;
+    --secondary-color: #2E0854;
+    --tertiary-color: #E5CCFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 110px;
+}
+
+.page-title {
+    margin: 10px 30px;
+}
+
+.page-title a {
+    font-weight: bold;
+}
+
+.post {
+    width: 900px;
+    margin: 30px 0;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.post-title {
+    font-size: 24px;
+    margin: 0 11px;
+}
+
+.post-meta {
+    font-size: 16px;
+    margin: 0 11px;
+}
+
+.post-content {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.login-container, .signup-container, .comment-form, .comment-container, .create-post-container,
+.edit-post-container {
+    width: 900px;
+    margin: 30px 0;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.login-title, .signup-title, .create-post-title, .edit-title {
+    padding: 5px 10px;
+}
+
+.new-post-btn {
+    padding: 5px 10px;
+}
+
+.comment-form-title {
+    font-size: 18px;
+    padding: 10px 10px 0 10px;
+}
+
+.comment-input {
+    width: 870px;
+}
+
+.comment-body {
+    font-size: 17px;
+}
+
+.new-post-btn {
+    font-size: 22px;
+}
+
+.post-content-input {
+    height: 100px;
+}
+
+.dashboard-title {
+    font-weight: bold;
+}
+
+.dashboard-post {
+    width: 900px;
+    padding: 10px;
+}
+
+.dashboard-post-text {
+    font-size: 18px;
+}
+
+.edit-button {
+    margin: 3px 0;
+}
