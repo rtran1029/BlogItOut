@@ -36,6 +36,8 @@ This app is connected to a MySQL DB and JAWSDB was utilized to deploy it to HERO
 
 ![Screenshot](./assets/img/editPost.JPG?raw=true "Screenshot")
 
+![Screenshot](./assets/img/MYSQL.JPG?raw=true "Screenshot")
+
 ## License
 MIT License
 ## Tests
