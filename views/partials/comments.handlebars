@@ -1,0 +1,15 @@
+<div class="comment-container mx-auto border-dark">
+  <div class="p-3 bg-dark">
+    <h2></h2>
+  </div>
+  {{#each this}}
+  <section class="p-3">
+    <div class="text comment-body text-dark">
+      {{comment_text}}
+    </div>
+    <div class="meta comment-body text-dark">
+      -{{user.username}}, {{format_date created_at}}
+    </div>
+  </section>
+  {{/each}}
+</div>

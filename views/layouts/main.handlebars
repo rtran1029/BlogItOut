@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just Tech News</title>
+  <!-- bootstrap style sheet-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div>
+    <header class="bg-dark w-auto">
+      <div class="d-flex flex-row">
+        <div>
+          <a href="/" class="btn btn-dark text-white fs-3">Home</a>
+        </div>
+        <div>
+          <a href="/dashboard" class="btn btn-dark text-white">Dashboard</a>
+        </div>
+        {{#if loggedIn}}
+        <div>
+          <button id="logout" class="btn btn-dark">Logout</button>
+        </div>
+        {{else}}
+        <div>
+          <a href="/login" class="btn btn-dark text-white">Login</a>
+        </div>
+        {{/if}}
+      </div>
+      <h1 class="page-title">
+        <a href="/" class="bg-white rounded text-dark p-1 text-decoration-none">The Tech Blog</a>
+      </h1>
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+  </div>
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
