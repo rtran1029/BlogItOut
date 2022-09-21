@@ -13,26 +13,26 @@
 
 <body>
   <div>
-    <header class="bg-dark w-auto">
+    <header class="bg-primary w-auto">
       <div class="d-flex flex-row">
         <div>
-          <a href="/" class="btn btn-dark text-white fs-3">Home</a>
+          <a href="/" class="btn btn-primary text-white fs-3">Home</a>
         </div>
         <div>
-          <a href="/dashboard" class="btn btn-dark text-white">Dashboard</a>
+          <a href="/dashboard" class="btn btn-primary text-white">Dashboard</a>
         </div>
         {{#if loggedIn}}
         <div>
-          <button id="logout" class="btn btn-dark">Logout</button>
+          <button id="logout" class="btn btn-primary">Logout</button>
         </div>
         {{else}}
         <div>
-          <a href="/login" class="btn btn-dark text-white">Login</a>
+          <a href="/login" class="btn btn-primary text-white">Login</a>
         </div>
         {{/if}}
       </div>
       <h1 class="page-title">
-        <a href="/" class="bg-white rounded text-dark p-1 text-decoration-none">The Tech Blog</a>
+        <a href="/" class="bg-white rounded text-primary p-1 text-decoration-none">The Tech Blog</a>
       </h1>
     </header>
     <main>
