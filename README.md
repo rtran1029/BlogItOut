@@ -54,4 +54,4 @@ Contact me: <br/>
 
 ## DEPLOYED APP LINK
 
-https://rocky-lake-77427.herokuapp.com/dashboard/edit/3
+https://rocky-lake-77427.herokuapp.com
