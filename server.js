@@ -4,7 +4,7 @@ const express = require("express");
 const exphbs = require('express-handlebars');
 
 const app = express();
-// const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -43,7 +43,10 @@ app.use(require('./controllers/'));
 //     console.log("app listening on port " + PORT);
 //   });
 // });
-
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+// turn on connection to db and server
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log("Now listening"));
 });
+// app.listen(process.env.PORT || 3000, function(){
+//   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+// });
