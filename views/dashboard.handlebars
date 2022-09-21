@@ -1,0 +1,24 @@
+<h2 class="p-3 dashboard-title">Your Dashboard</h2>
+
+{{#if posts.length}}
+<section>
+  <ol class="">
+  {{#each posts as |post|}}
+  	<li>
+    	<article class="p-2">
+        <div class="d-flex justify-content-between dashboard-post mx-auto bg-secondary rounded">
+          <div>
+            <a class="text-white dashboard-post-text" href="/dashboard/edit/{{post.id}}">{{post.title}}</a>
+          </div>
+          <div class="meta text-white dashboard-post-text">
+            {{format_date created_at}}
+          </div>
+        </div>
+      </article>
+  	</li>
+  {{/each}}
+	</ol>
+</section>
+{{/if}}
+
+<a href="/create-post" class="btn btn-dark new-post-btn fixed-bottom new-post-btn">+ New Post</a>
